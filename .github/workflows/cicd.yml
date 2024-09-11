@@ -20,7 +20,7 @@ jobs:
       - name: Sign in to Docker Hub
         run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
       - name: Build Docker Image
-        run: docker build -t rwewine/front_test_todo
+        run: docker build -t rwewine/front_test_todo .
       - name: Push Docker Image
         run: docker push rwewine/front_test_todo:latest
 
