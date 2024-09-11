@@ -31,7 +31,6 @@ jobs:
     steps:
       - name: Pull image from docker hub
         run: docker pull rwewine/front_test_todo:latest
-        run: docker pull rwewine/front_test_todo:latest
       - name: Delete existing container
         run: docker rm -f reactContainer
       - name: Run container
